@@ -376,6 +376,9 @@ footer{background:#070f1f;color:var(--on-ink-soft);font-size:.86rem}
 .chips2{display:flex;flex-wrap:wrap;gap:10px}
 .chips2 span{padding:10px 16px;border:1px solid var(--rule);background:var(--card);font-size:.92rem}
 
+a.mail{text-decoration:none;color:inherit}
+a.mail:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+
 </style>
 </head>
 <body>
@@ -383,7 +386,7 @@ footer{background:#070f1f;color:var(--on-ink-soft);font-size:.86rem}
 <div class="util">
   <div class="wrap">
     <span>Bd Abdelmoumen · Casablanca</span>
-    <span><span class="hide-sm">ahmed@chahbi.com · </span><b>05 22 86 17 61</b></span>
+    <span><a class="hide-sm mail" href="mailto:ahmed@chahbi.com">ahmed@chahbi.com</a><span class="hide-sm"> · </span><b>05 22 86 17 61</b></span>
   </div>
 </div>
 
@@ -555,7 +558,7 @@ footer{background:#070f1f;color:var(--on-ink-soft);font-size:.86rem}
       </div>
       <div class="coords">
         <div class="line"><small>Téléphone</small><span class="val" id="v-tel">05 22 86 17 61</span><button class="chip" type="button" id="c-tel" data-copy="v-tel">Copier</button></div>
-        <div class="line"><small>Email</small><span class="val" id="v-mail">ahmed@chahbi.com</span><button class="chip" type="button" id="c-mail" data-copy="v-mail">Copier</button></div>
+        <div class="line"><small>Email</small><a class="val mail" id="v-mail" href="mailto:ahmed@chahbi.com">ahmed@chahbi.com</a><button class="chip" type="button" id="c-mail" data-copy="v-mail">Copier</button></div>
         <div class="line"><small>Adresse</small><span class="val addr">421 bd Abdelmoumen, Résidence Ryad Abdelmoumen, imm. B, 4ᵉ étage, n°16 — Casablanca</span><a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=421+boulevard+Abdelmoumen+Casablanca" target="_blank" rel="noopener">Itinéraire <span class="arrow" aria-hidden="true">↗</span></a></div>
       </div>
     </div>
@@ -571,7 +574,7 @@ footer{background:#070f1f;color:var(--on-ink-soft);font-size:.86rem}
     </div>
     <div><h4>Expertises</h4><ul id="foot-caps" data-prefix=""></ul></div>
     <div><h4>Cabinet</h4><ul><li><a href="fondateur.html">Le fondateur</a></li><li><a href="fondateur.html#presse">Dans les médias</a></li><li><a href="#investisseurs">Investisseurs</a></li><li><a href="#methode">Méthode</a></li></ul></div>
-    <div><h4>Contact</h4><ul><li>05 22 86 17 61</li><li>ahmed@chahbi.com</li><li>421 bd Abdelmoumen</li><li>Casablanca, Maroc</li></ul></div>
+    <div><h4>Contact</h4><ul><li>05 22 86 17 61</li><li><a href="mailto:ahmed@chahbi.com">ahmed@chahbi.com</a></li><li>421 bd Abdelmoumen</li><li>Casablanca, Maroc</li></ul></div>
   </div>
   <div class="legal"><div class="wrap"><span>© 2026 Chahbi Advisory · Depuis 2008</span><span>Les actes réservés aux professions réglementées sont confiés ou coordonnés avec les professionnels habilités.</span></div></div>
 </footer>
