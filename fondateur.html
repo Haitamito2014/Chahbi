@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ahmed Chahbi · Chahbi Advisory</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Ahmed Chahbi, expert-comptable DPLE, fondateur de Chahbi Advisory : parcours, engagements et presse.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..800;1,62..125,300..500&family=Source+Serif+4:ital,opsz,wght@1,8..60,400;1,8..60,500&display=swap">
+<style>
+
+/* Layout: big-firm editorial — utility bar + mega-menu, monumental expanded headline beside the 6-step investor journey,
+   an interactive "capabilities explorer", ink bands that stay dark in both themes. Gold is used only as a hairline. */
+:root{
+  --ink:#0a1830;          /* bleu nuit — dark bands, both themes */
+  --ink-2:#12254a;
+  --gold:#b8925a;         /* or mat — hairlines, small marks */
+  --green:#2f6b52;        /* vert profond — "Transformer", progress */
+  --paper:#f5f6f8;        /* page */
+  --card:#ffffff;
+  --text:#0d1626;
+  --soft:#5a6578;
+  --rule:#d9dee6;
+  --on-ink:#f1f3f7;
+  --on-ink-soft:#9aa6ba;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  --max:1240px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0c1424;--card:#111c31;--text:#e9edf4;--soft:#9ba7bb;--rule:#22314b;--gold:#c9a56e;--green:#5c9c7f;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0c1424;--card:#111c31;--text:#e9edf4;--soft:#9ba7bb;--rule:#22314b;--gold:#c9a56e;--green:#5c9c7f;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--text);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;font-variation-settings:"wdth" 100}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+h1,h2,h3,h4{margin:0;font-family:var(--display);text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--soft)}
+.kicker::before{content:"";width:22px;height:1px;background:var(--gold)}
+.ink .kicker{color:var(--on-ink-soft)}
+.ink{background:var(--ink);color:var(--on-ink)}
+.arrow{display:inline-block;transition:transform .35s var(--ease)}
+a:hover .arrow,button:hover .arrow{transform:translateX(5px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* ---------- Header ---------- */
+.util{background:var(--ink);color:var(--on-ink-soft);font-size:.78rem}
+.util .wrap{display:flex;justify-content:space-between;gap:16px;min-height:36px;align-items:center}
+.util b{color:var(--on-ink);font-weight:500;font-variant-numeric:tabular-nums}
+header.main{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--ink);color:var(--on-ink);border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.bar{display:flex;align-items:center;gap:28px;min-height:72px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.logo-mark{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--gold);font-family:var(--display);font-weight:700;font-size:1rem;font-variation-settings:"wdth" 110;color:var(--on-ink)}
+.logo-type{font-family:var(--display);font-weight:700;letter-spacing:.14em;font-size:.95rem;font-variation-settings:"wdth" 118;line-height:1.1}
+.logo-type small{display:block;font-weight:400;letter-spacing:.24em;font-size:.6rem;color:var(--on-ink-soft)}
+.menu{display:flex;gap:2px;align-items:stretch}
+.menu > a,.menu > button{background:none;border:0;text-decoration:none;padding:0 14px;min-height:72px;display:flex;align-items:center;gap:6px;font-size:.92rem;font-weight:500;color:var(--on-ink);cursor:pointer;position:relative}
+.menu > a::after,.menu > button::after{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.menu > a:hover::after,.menu > button:hover::after,.menu > button[aria-expanded="true"]::after{transform:scaleX(1)}
+.chev{width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .3s var(--ease)}
+button[aria-expanded="true"] .chev{transform:rotate(225deg) translateY(-2px)}
+.cta-top{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 20px;background:var(--on-ink);color:var(--ink);text-decoration:none;font-weight:600;font-size:.88rem}
+.cta-top:hover{background:#fff}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.25);width:44px;height:44px;cursor:pointer;color:var(--on-ink)}
+.burger span{display:block;width:18px;height:1.5px;background:currentColor;margin:4px auto}
+
+/* Mega menu */
+.mega{position:absolute;left:0;right:0;top:100%;background:var(--ink-2);border-top:1px solid rgba(255,255,255,.08);box-shadow:0 30px 60px -20px rgba(0,0,0,.45);opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s var(--ease),transform .3s var(--ease),visibility 0s .3s}
+.mega.open{opacity:1;visibility:visible;transform:none;transition:opacity .25s var(--ease),transform .3s var(--ease)}
+.mega-grid{display:grid;grid-template-columns:1fr 2.2fr;gap:48px;padding-block:40px 44px}
+.mega-intro h3{font-size:1.7rem;font-weight:300;font-variation-settings:"wdth" 112;line-height:1.15;color:var(--on-ink)}
+.mega-intro p{margin-top:14px;color:var(--on-ink-soft);font-size:.92rem;max-width:30ch}
+.mega-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+.mega-links a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.09);text-decoration:none;color:var(--on-ink);font-size:.98rem}
+.mega-links a span:first-child{display:flex;gap:14px}
+.mega-links a i{font-style:normal;color:var(--gold);font-size:.78rem;font-variant-numeric:tabular-nums;padding-top:2px}
+.mega-links a:hover{color:#fff}
+
+/* Mobile drawer */
+.drawer{display:none}
+@media (max-width:980px){
+  .menu,.cta-top,.mega{display:none}
+  .burger{display:block}
+  .drawer{display:block;position:fixed;inset:0;z-index:70;background:var(--ink);color:var(--on-ink);padding:calc(env(safe-area-inset-top,0px) + 20px) max(20px,env(safe-area-inset-right,0px)) 30px max(20px,env(safe-area-inset-left,0px));transform:translateX(100%);visibility:hidden;transition:transform .4s var(--ease),visibility 0s .4s;overflow:auto}
+  .drawer.open{transform:none;visibility:visible;transition:transform .4s var(--ease)}
+  .drawer-top{display:flex;justify-content:space-between;align-items:center;min-height:52px}
+  .drawer nav{display:grid;margin-top:24px}
+  .drawer nav a{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1);text-decoration:none;font-family:var(--display);font-size:1.6rem;font-weight:300;font-variation-settings:"wdth" 112}
+  .util .hide-sm{display:none}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px) 0 0/calc(100%/12) 100%;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:0;min-height:640px}
+.hero-copy{padding-block:84px 56px;padding-right:48px;display:flex;flex-direction:column;min-width:0}
+.hero h1{font-size:clamp(2.6rem,6.6vw,5.6rem);line-height:.98;font-weight:300;letter-spacing:-.025em;font-variation-settings:"wdth" 118;margin-top:28px}
+.hero h1 strong{font-weight:700;display:block}
+.rot{position:relative;display:inline-grid;color:var(--gold);font-weight:700}
+.rot span{grid-area:1/1;transition:opacity .5s var(--ease),transform .6s var(--ease)}
+.rot span:not(.on){opacity:0;transform:translateY(.35em)}
+.hero .lead{margin-top:30px;max-width:44ch;font-size:1.12rem;color:var(--on-ink-soft)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;text-decoration:none;font-weight:600;font-size:.94rem;border:1px solid transparent;cursor:pointer;background:none}
+.btn-light{background:var(--on-ink);color:var(--ink)}
+.btn-light:hover{background:#fff}
+.btn-line{border-color:rgba(255,255,255,.3);color:var(--on-ink)}
+.btn-line:hover{border-color:var(--gold)}
+.hero-foot{margin-top:auto;padding-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.12)}
+.hero-foot div{padding-top:18px;padding-right:12px}
+.hero-foot b{display:block;font-family:var(--display);font-weight:600;font-size:1.05rem;font-variation-settings:"wdth" 112}
+.hero-foot span{font-size:.82rem;color:var(--on-ink-soft)}
+
+.portrait{position:relative;margin:0;background:var(--ink-2);overflow:hidden;isolation:isolate}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait figcaption{position:absolute;z-index:3;left:0;bottom:0;background:var(--ink);padding:18px 28px 20px 0;padding-left:max(28px,0px)}
+.portrait figcaption b{display:block;font-family:var(--display);font-size:2rem;font-weight:600;letter-spacing:-.01em;font-variation-settings:"wdth" 114;color:#fff;line-height:1.05}
+.portrait figcaption span{display:block;margin-top:8px;font-size:.84rem;color:#d8c39d;letter-spacing:.04em}
+.portrait .tag{position:absolute;z-index:3;top:28px;right:28px;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.4);padding:6px 10px}
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:48px 0 40px}
+  .portrait{aspect-ratio:4/5;max-height:560px;margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)))}
+  .hero-foot{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:520px){.hero-foot{grid-template-columns:1fr}.hero-foot div{padding-top:12px}}
+
+/* Insight ribbon (McKinsey-style featured insight) */
+.ribbon{background:var(--card);border-bottom:1px solid var(--rule)}
+.ribbon a{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:28px;align-items:center;padding-block:22px;text-decoration:none}
+.ribbon .badge{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green);border:1px solid var(--green);padding:6px 10px}
+.ribbon .t{font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.35}
+.ribbon .src{font-size:.82rem;color:var(--soft);white-space:nowrap}
+.ribbon a:hover .t{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+@media (max-width:760px){.ribbon a{grid-template-columns:1fr;gap:10px}.ribbon .badge{justify-self:start}}
+
+/* ---------- Sections ---------- */
+section.block{padding-block:112px}
+@media (max-width:760px){section.block{padding-block:72px}}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:56px}
+.head h2{font-size:clamp(2rem,4.2vw,3.5rem);line-height:1.02;font-weight:300;letter-spacing:-.02em;font-variation-settings:"wdth" 116;margin-top:16px}
+.head h2 b{font-weight:700}
+.head p{color:var(--soft);max-width:44ch;justify-self:end}
+.ink .head p{color:var(--on-ink-soft)}
+@media (max-width:860px){.head{grid-template-columns:1fr;gap:16px}.head p{justify-self:start}}
+
+/* Commitments: three big tabs */
+.commit{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--text)}
+.commit button{all:unset;cursor:pointer;display:block;padding:28px 24px 30px 0;border-bottom:1px solid var(--rule);position:relative}
+.commit button + button{padding-left:24px;border-left:1px solid var(--rule)}
+.commit button::before{content:"";position:absolute;left:0;right:0;top:-1px;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.commit button + button::before{left:0}
+.commit button[aria-selected="true"]::before{transform:scaleX(1)}
+.commit button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.commit .w{display:block;font-family:var(--display);font-size:clamp(1.8rem,3.6vw,3rem);font-weight:700;letter-spacing:-.02em;font-variation-settings:"wdth" 120;line-height:1;color:var(--soft);transition:color .3s}
+.commit button[aria-selected="true"] .w,.commit button:hover .w{color:var(--text)}
+.commit .a{display:block;margin-top:10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.commit-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;padding-top:40px}
+.commit-panel .q{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,2.6vw,2.2rem);line-height:1.25}
+.commit-panel ul{list-style:none;margin:0;padding:0;display:grid;gap:0;align-content:start}
+.commit-panel li{padding:14px 0;border-bottom:1px solid var(--rule);display:flex;gap:14px}
+.commit-panel li::before{content:"";flex:none;width:6px;height:6px;margin-top:.62em;background:var(--green)}
+@media (max-width:760px){
+  .commit{grid-template-columns:1fr}
+  .commit button,.commit button + button{padding:20px 0;border-left:0}
+  .commit-panel{grid-template-columns:1fr;gap:24px}
+}
+
+/* Capabilities explorer */
+.explorer{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr);gap:0;border-top:1px solid rgba(255,255,255,.18)}
+.cap-list{list-style:none;margin:0;padding:0;border-right:1px solid rgba(255,255,255,.12)}
+.cap-list button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:44px minmax(0,1fr) 24px;align-items:center;gap:8px;padding:19px 24px 19px 0;border-bottom:1px solid rgba(255,255,255,.1);color:var(--on-ink-soft);transition:color .25s,padding .35s var(--ease)}
+.cap-list button i{font-style:normal;font-size:.76rem;color:var(--gold);font-variant-numeric:tabular-nums}
+.cap-list button b{font-family:var(--display);font-weight:500;font-size:1.18rem;font-variation-settings:"wdth" 108}
+.cap-list button .arrow{opacity:0}
+.cap-list button:hover,.cap-list button[aria-selected="true"]{color:#fff}
+.cap-list button[aria-selected="true"]{padding-left:14px}
+.cap-list button[aria-selected="true"] .arrow{opacity:1}
+.cap-list button:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.cap-panel{padding:8px 0 8px 56px;min-width:0}
+.cap-panel .num{font-family:var(--display);font-size:clamp(4rem,9vw,7.5rem);font-weight:200;line-height:.8;color:transparent;-webkit-text-stroke:1px var(--gold);font-variation-settings:"wdth" 125;font-variant-numeric:tabular-nums}
+.cap-panel h3{margin-top:22px;font-size:clamp(1.6rem,2.8vw,2.3rem);font-weight:600;font-variation-settings:"wdth" 112;letter-spacing:-.01em;line-height:1.1}
+.cap-panel .v{margin-top:12px;color:var(--on-ink-soft);font-size:1.05rem;max-width:46ch}
+.subs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;margin-top:32px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12)}
+.subs div{background:var(--ink);padding:20px 18px;font-weight:500;font-size:.95rem;min-width:0}
+.deliv{margin-top:24px;font-size:.86rem;color:var(--on-ink-soft)}
+.deliv b{color:var(--gold);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.7rem;margin-right:10px}
+.cap-panel .swap{animation:fadeup .5s var(--ease)}
+@keyframes fadeup{from{opacity:.0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (max-width:980px){
+  .explorer{grid-template-columns:1fr}
+  .cap-list{border-right:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .cap-list li{flex:none;scroll-snap-align:start}
+  .cap-list button{width:auto;grid-template-columns:auto auto;padding:12px 16px;border:1px solid rgba(255,255,255,.18);white-space:nowrap}
+  .cap-list button[aria-selected="true"]{padding-left:16px;border-color:var(--gold)}
+  .cap-list button .arrow{display:none}
+  .cap-list button b{font-size:.95rem}
+  .cap-panel{padding:32px 0 0}
+  .subs{grid-template-columns:1fr}
+}
+
+/* Founder — magazine spread */
+.founder{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.f-photo{position:relative;margin:0}
+.f-photo img{display:block;width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%}
+.f-photo::after{content:"";position:absolute;left:-14px;bottom:-14px;width:40%;height:40%;border-left:1px solid var(--gold);border-bottom:1px solid var(--gold);pointer-events:none}
+.f-photo figcaption{margin-top:12px;font-size:.74rem;color:var(--soft)}
+.founder h2{font-size:clamp(2.4rem,5vw,4.2rem);font-weight:700;letter-spacing:-.03em;line-height:.95;font-variation-settings:"wdth" 120;margin-top:18px}
+.founder .role{margin-top:14px;font-size:1.02rem;color:var(--soft)}
+.pull{margin:44px 0 0;position:relative;padding-top:28px;border-top:1px solid var(--text)}
+.pull p{font-family:var(--serif);font-style:italic;font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.15;letter-spacing:-.01em}
+.pull cite{display:block;margin-top:14px;font-style:normal;font-size:.84rem;color:var(--soft)}
+.pull cite a{color:var(--text);text-underline-offset:3px;text-decoration-color:var(--gold)}
+.facts{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 32px}
+.facts li{padding:18px 0;border-top:1px solid var(--rule)}
+.facts small{display:block;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.facts span{display:block;margin-top:6px;font-weight:500}
+@media (max-width:980px){.founder{grid-template-columns:1fr;gap:44px}.f-photo{max-width:440px}}
+@media (max-width:560px){.facts{grid-template-columns:1fr}}
+
+/* Sectors */
+.sectors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--text)}
+.sector{padding:30px 28px 34px 0;border-bottom:1px solid var(--rule);min-width:0;position:relative}
+.sector:nth-child(3n+2),.sector:nth-child(3n+3){padding-left:28px;border-left:1px solid var(--rule)}
+.sector h3{font-size:1.32rem;font-weight:600;font-variation-settings:"wdth" 110;letter-spacing:-.005em}
+.sector p{margin-top:8px;color:var(--soft);font-size:.94rem}
+.sector svg{width:30px;height:30px;stroke:var(--green);fill:none;stroke-width:1.4;margin-bottom:18px}
+@media (max-width:860px){.sectors{grid-template-columns:1fr 1fr}.sector,.sector:nth-child(n){padding:24px 18px 26px 0;border-left:0}.sector:nth-child(2n){padding-left:18px;border-left:1px solid var(--rule)}}
+@media (max-width:520px){.sectors{grid-template-columns:1fr}.sector:nth-child(n){padding:22px 0;border-left:0}}
+
+/* Method */
+.method{position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;list-style:none;margin:0;padding:0}
+.method::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--rule)}
+.method::after{content:"";position:absolute;left:0;top:-1px;height:3px;width:100%;background:var(--green);transform-origin:left;transform:scaleX(var(--p,1));transition:transform 1.2s var(--ease)}
+.method li{padding:30px 20px 0 0;min-width:0}
+.method li span{font-family:var(--display);font-size:.8rem;font-weight:600;color:var(--green);font-variant-numeric:tabular-nums;letter-spacing:.1em}
+.method li b{display:block;margin-top:10px;font-family:var(--display);font-size:1.45rem;font-weight:600;font-variation-settings:"wdth" 112;letter-spacing:-.01em}
+.method li p{margin-top:8px;color:var(--soft);font-size:.92rem}
+.mandate{margin-top:56px;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;padding:22px 26px;background:var(--card);border:1px solid var(--rule)}
+.mandate b{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.mandate span{color:var(--soft);font-size:.94rem}
+@media (max-width:860px){.method{grid-template-columns:1fr}.method::before{left:0;top:0;bottom:0;width:1px;height:auto;right:auto}.method::after{content:"";width:3px;height:100%;left:-1px;top:0;transform:scaleY(var(--p,1));transform-origin:top}.method li{padding:0 0 26px 26px}}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:72px;align-items:start}
+.contact h2{font-size:clamp(2.6rem,6vw,5rem);line-height:.95;font-weight:300;letter-spacing:-.03em;font-variation-settings:"wdth" 120}
+.contact h2 b{font-weight:700;display:block}
+.contact .sub{margin-top:24px;color:var(--on-ink-soft);max-width:38ch;font-size:1.05rem}
+.coords{border-top:1px solid rgba(255,255,255,.25)}
+.line{display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.line small{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--on-ink-soft)}
+.line .val{font-family:var(--display);font-size:1.3rem;font-weight:500;font-variation-settings:"wdth" 110;font-variant-numeric:tabular-nums;user-select:all}
+.line .val.addr{font-family:var(--body);font-size:1rem;font-weight:400;line-height:1.5;user-select:text;font-variation-settings:"wdth" 100}
+.chip{min-height:44px;padding:0 16px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.28);background:transparent;color:var(--on-ink);font-size:.82rem;font-weight:600;cursor:pointer;text-decoration:none;white-space:nowrap}
+.chip:hover{border-color:var(--gold)}
+@media (max-width:860px){.contact{grid-template-columns:1fr;gap:44px}}
+@media (max-width:520px){.line{grid-template-columns:1fr auto}.line small{grid-column:1/-1}}
+
+/* Footer */
+footer{background:#070f1f;color:var(--on-ink-soft);font-size:.86rem}
+.foot{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:40px;padding-block:64px 40px}
+.foot h4{font-family:var(--body);font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--on-ink);margin-bottom:14px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--on-ink)}
+.foot .tagline{margin-top:18px;max-width:30ch;font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--on-ink)}
+.legal{border-top:1px solid rgba(255,255,255,.08)}
+.legal .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-block:22px;font-size:.78rem}
+@media (max-width:860px){.foot{grid-template-columns:1fr 1fr}.foot > div:first-child{grid-column:1/-1}}
+
+/* ---------- v3 additions ---------- */
+.mega-grid{grid-template-columns:1fr 2.6fr}
+.mega-links a{padding:11px 0;font-size:.94rem}
+
+/* Hero cycle panel (replaces the portrait on the home page) */
+.cycle{position:relative;margin:0;background:var(--ink-2);padding:44px 40px 36px;display:flex;flex-direction:column;border-left:1px solid rgba(255,255,255,.08)}
+.cycle h2{font-size:1.05rem;font-weight:600;letter-spacing:.02em;color:var(--on-ink);font-variation-settings:"wdth" 108}
+.cycle h2 small{display:block;margin-top:6px;font-weight:400;font-size:.86rem;color:var(--on-ink-soft);letter-spacing:0}
+.cycle ol{list-style:none;margin:26px 0 0;padding:0;display:grid;counter-reset:c;position:relative}
+.cycle ol::before{content:"";position:absolute;left:15px;top:16px;bottom:16px;width:1px;background:rgba(255,255,255,.16)}
+.cycle li{counter-increment:c;display:grid;grid-template-columns:32px minmax(0,1fr);gap:16px;padding:11px 0;position:relative}
+.cycle li::before{content:counter(c);width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--gold);background:var(--ink-2);color:var(--gold);font-size:.78rem;font-weight:600;font-variant-numeric:tabular-nums;position:relative;z-index:1}
+.cycle li b{display:block;font-family:var(--display);font-weight:600;font-size:1.08rem;color:#fff;font-variation-settings:"wdth" 110;line-height:1.2}
+.cycle li span{display:block;font-size:.85rem;color:var(--on-ink-soft);line-height:1.45;margin-top:2px}
+@media (max-width:980px){.cycle{margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));padding:36px max(20px,env(safe-area-inset-left,0px));border-left:0;border-top:1px solid rgba(255,255,255,.08)}}
+
+/* Profiles grid: CTA cell */
+.sector.cta{display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;background:var(--card)}
+.sector.cta h3{color:var(--text)}
+.sector.cta .go{margin-top:18px;font-weight:600;font-size:.92rem;color:var(--green);display:inline-flex;gap:10px}
+.sector.cta:hover h3{color:var(--green)}
+
+/* Engagement band */
+.engage{margin-top:56px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;padding:30px 32px;background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--gold)}
+.engage b{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:6px}
+.engage p{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.4}
+@media (max-width:760px){.engage{grid-template-columns:1fr;gap:10px;padding:24px 22px}}
+
+/* Founder teaser on home (text only) */
+.teaser{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;align-items:end}
+.teaser h2{font-size:clamp(2rem,4.4vw,3.6rem);line-height:1;font-weight:300;letter-spacing:-.025em;font-variation-settings:"wdth" 118;margin-top:16px}
+.teaser h2 b{font-weight:700}
+.teaser .lead2{margin-top:20px;color:var(--soft);max-width:46ch;font-size:1.05rem}
+.teaser .btn-dark{margin-top:30px;background:var(--text);color:var(--paper)}
+.teaser .btn-dark:hover{background:var(--green);color:#fff}
+.tfacts{list-style:none;margin:0;padding:0;border-top:1px solid var(--text)}
+.tfacts li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;padding:16px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.tfacts b{font-family:var(--display);font-weight:600;font-size:1.15rem;font-variation-settings:"wdth" 112;font-variant-numeric:tabular-nums}
+.tfacts span{color:var(--soft)}
+@media (max-width:860px){.teaser{grid-template-columns:1fr;gap:36px}}
+
+/* ---------- Founder page ---------- */
+.fhero .hero-grid{min-height:600px}
+.fhero h1{font-size:clamp(3rem,7.4vw,6.2rem);line-height:.92;font-weight:700;letter-spacing:-.035em;font-variation-settings:"wdth" 120;margin-top:26px}
+.fhero h1 span{display:block;font-weight:300}
+.fhero .role{margin-top:22px;font-size:1.1rem;color:var(--on-ink)}
+.fhero .role small{display:block;margin-top:6px;font-size:.92rem;color:var(--on-ink-soft)}
+.back{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;color:var(--on-ink-soft);text-decoration:none}
+.back:hover{color:var(--on-ink)}
+.photo{position:relative;margin:0;background:var(--ink-2);overflow:hidden}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.photo figcaption{position:absolute;right:0;bottom:0;background:var(--ink);color:var(--on-ink-soft);font-size:.72rem;padding:8px 14px;letter-spacing:.04em}
+@media (max-width:980px){.photo{aspect-ratio:4/5;max-height:600px;margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)))}}
+
+/* Press */
+.press{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.pcard{background:var(--card);padding:30px 30px 28px;text-decoration:none;display:flex;flex-direction:column;gap:14px;min-width:0;transition:background .25s}
+.pcard:hover{background:var(--paper)}
+.pcard .meta{display:flex;justify-content:space-between;gap:12px;font-size:.78rem;color:var(--soft);font-variant-numeric:tabular-nums}
+.pcard .src{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text);font-size:.72rem}
+.pcard h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.25rem,2vw,1.55rem);line-height:1.3}
+.pcard p{color:var(--soft);font-size:.92rem}
+.pcard .read{margin-top:auto;padding-top:6px;font-size:.86rem;font-weight:600;color:var(--green);display:inline-flex;gap:8px}
+.pcard:hover .arrow{transform:translate(3px,-3px)}
+@media (max-width:760px){.press{grid-template-columns:1fr}.pcard{padding:24px 20px}}
+
+/* Timeline */
+.tl{list-style:none;margin:0;padding:0;border-top:1px solid var(--text)}
+.tl li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:28px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.tl .yr{font-family:var(--display);font-weight:600;font-size:1.05rem;font-variant-numeric:tabular-nums;font-variation-settings:"wdth" 112;color:var(--green)}
+.tl b{display:block;font-family:var(--display);font-weight:600;font-size:1.2rem;font-variation-settings:"wdth" 108}
+.tl p{margin-top:4px;color:var(--soft)}
+@media (max-width:640px){.tl li{grid-template-columns:1fr;gap:4px}}
+
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:56px}}
+.roles{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid rgba(255,255,255,.25)}
+.roles li{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.roles b{display:block;font-family:var(--display);font-weight:500;font-size:1.25rem;color:#fff;font-variation-settings:"wdth" 110;line-height:1.25}
+.roles span{display:block;margin-top:4px;font-size:.88rem;color:var(--on-ink-soft)}
+.edu{list-style:none;margin:0;padding:0;border-top:1px solid var(--text)}
+.edu li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.edu .yr{font-weight:700;font-variant-numeric:tabular-nums;color:var(--gold)}
+.edu b{font-weight:600}
+.edu span{display:block;color:var(--soft);font-size:.9rem}
+.missions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.25)}
+.missions div{padding:22px 22px 24px 0;border-bottom:1px solid rgba(255,255,255,.12);min-width:0}
+.missions div:nth-child(3n+2),.missions div:nth-child(3n+3){padding-left:22px;border-left:1px solid rgba(255,255,255,.12)}
+.missions small{font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-variant-numeric:tabular-nums}
+.missions b{display:block;margin-top:6px;font-family:var(--display);font-weight:600;font-size:1.15rem;color:#fff;font-variation-settings:"wdth" 110}
+.missions span{display:block;margin-top:4px;font-size:.88rem;color:var(--on-ink-soft)}
+@media (max-width:860px){.missions{grid-template-columns:1fr 1fr}.missions div,.missions div:nth-child(n){padding:20px 16px 22px 0;border-left:0}.missions div:nth-child(2n){padding-left:16px;border-left:1px solid rgba(255,255,255,.12)}}
+@media (max-width:520px){.missions{grid-template-columns:1fr}.missions div:nth-child(n){padding:18px 0;border-left:0}}
+.chips2{display:flex;flex-wrap:wrap;gap:10px}
+.chips2 span{padding:10px 16px;border:1px solid var(--rule);background:var(--card);font-size:.92rem}
+
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <span>Bd Abdelmoumen · Casablanca</span>
+    <span><span class="hide-sm">ahmed@chahbi.com · </span><b>05 22 86 17 61</b></span>
+  </div>
+</div>
+
+<header class="main">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Chahbi Advisory, accueil">
+      <span class="logo-mark" aria-hidden="true">C</span>
+      <span class="logo-type">CHAHBI<small>ADVISORY</small></span>
+    </a>
+    <nav class="menu" aria-label="Navigation principale">
+      <button type="button" id="mega-btn" aria-expanded="false" aria-controls="mega">Expertises <span class="chev" aria-hidden="true"></span></button>
+      <a href="index.html#investisseurs">Investisseurs</a>
+      <a href="index.html#methode">Méthode</a>
+      <a href="fondateur.html" aria-current="page">Le fondateur</a>
+    </nav>
+    <a class="cta-top" href="index.html#contact">Nous contacter <span class="arrow" aria-hidden="true">→</span></a>
+    <button class="burger" type="button" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mega" id="mega" role="region" aria-label="Expertises">
+    <div class="wrap mega-grid">
+      <div class="mega-intro">
+        <h3>Une offre intégrée, un interlocuteur unique.</h3>
+        <p>De la conception du projet à la pleine maîtrise de l’activité.</p>
+      </div>
+      <div class="mega-links" id="mega-links" data-prefix="index.html"></div>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <span class="logo-type">CHAHBI<small>ADVISORY</small></span>
+    <button class="burger" type="button" id="drawer-close" aria-label="Fermer le menu" style="display:block">✕</button>
+  </div>
+  <nav aria-label="Navigation mobile">
+    <a href="index.html#expertises">Expertises</a>
+    <a href="index.html#investisseurs">Investisseurs</a>
+    <a href="index.html#methode">Méthode</a>
+    <a href="fondateur.html">Le fondateur</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</div>
+
+<main id="top">
+  <section class="hero ink fhero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <a class="back" href="index.html"><span aria-hidden="true">←</span> Chahbi Advisory</a>
+        <span class="kicker" style="margin-top:28px">Le fondateur</span>
+        <h1>Ahmed<span>Chahbi</span></h1>
+        <p class="role">Expert-comptable DPLE · Gérant associé de Chahbi Advisory<small>Audit, conseil et finance d’entreprise depuis 1997</small></p>
+        <div class="hero-foot">
+          <div><b>1997</b><span>Directeur de mission</span></div>
+          <div><b>2008</b><span>Fonde Chahbi Advisory</span></div>
+          <div><b>ONUDI</b><span>Expert international</span></div>
+        </div>
+      </div>
+      <figure class="photo">
+        <img src="ahmed-chahbi-telquel.jpg" alt="Ahmed Chahbi" width="640" height="800">
+        <figcaption>Photo : TelQuel</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" id="presse">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Dans les médias</span><h2>Une voix écoutée <b>de la profession</b>.</h2></div>
+        <p>Fiscalité, intelligence artificielle, avenir de l’expertise comptable.</p>
+      </div>
+      <div class="press">
+        <a class="pcard" href="https://telquel.ma/2026/04/10/ahmed-chahbi-la-concurrence-ne-se-joue-pas-uniquement-sur-la-taille-mais-aussi-sur-lexpertise_1983866" target="_blank" rel="noopener">
+          <div class="meta"><span class="src">TelQuel</span><span>10 avril 2026</span></div>
+          <h3>« La concurrence ne se joue pas uniquement sur la taille mais aussi sur l’expertise »</h3>
+          <p>Entretien sur la maturité de la profession, la concentration du marché et l’IA.</p>
+          <span class="read">Lire l’entretien <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="pcard" href="https://medias24.com/2025/11/15/experts-comptables-et-ia-il-faut-sy-mettre-sans-attendre-ahmed-chahbi/" target="_blank" rel="noopener">
+          <div class="meta"><span class="src">Médias24</span><span>15 novembre 2025</span></div>
+          <h3>« Experts-comptables et IA : il faut s’y mettre sans attendre »</h3>
+          <p>Intervention au 10ᵉ congrès de l’Ordre des Experts-Comptables, à Rabat.</p>
+          <span class="read">Lire l’article <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="pcard" href="https://lematin.ma/video/entretien-avec-ahmed-chahbi-expert-comptable-et-tresorier-de-loec-4649.html" target="_blank" rel="noopener">
+          <div class="meta"><span class="src">Le Matin TV</span><span>20 avril 2019</span></div>
+          <h3>Nouveau modèle de développement et réforme fiscale</h3>
+          <p>Entretien en marge des Matinales de la Fiscalité, avant les Assises de la Fiscalité.</p>
+          <span class="read">Voir l’entretien <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="pcard" href="https://lematin.ma/journal/2019/ont-declare/328047.html" target="_blank" rel="noopener">
+          <div class="meta"><span class="src">Le Matin</span><span>15 décembre 2019</span></div>
+          <h3>« L’amnistie fiscale est à la fois une bonne et une mauvaise chose »</h3>
+          <p>Son analyse de l’amnistie fiscale, dans « Ils ont déclaré… ».</p>
+          <span class="read">Lire l’article <span class="arrow" aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="parcours" style="padding-top:0">
+    <div class="wrap two">
+      <div>
+        <div class="head" style="grid-template-columns:1fr;margin-bottom:36px"><div><span class="kicker">Parcours</span><h2>Plus de 25 ans <b>au service des entreprises</b>.</h2></div></div>
+        <ol class="tl">
+          <li><span class="yr">Depuis 2008</span><div><b>Gérant associé, Chahbi Advisory</b><p>Expert-comptable DPLE. Audit, conseil et accompagnement des investisseurs.</p></div></li>
+          <li><span class="yr">Depuis 2008</span><div><b>Expert international, ONUDI</b><p>Finance d’entreprise, missions en Afrique.</p></div></li>
+          <li><span class="yr">Depuis 2002</span><div><b>Enseignant et formateur</b><p>Comptabilité, analyse financière, fiscalité, contrôle de gestion, audit.</p></div></li>
+          <li><span class="yr">1997 – 2008</span><div><b>Directeur de mission</b><p>Cabinet d’expertise comptable membre indépendant d’un réseau international.</p></div></li>
+        </ol>
+      </div>
+      <div>
+        <div class="head" style="grid-template-columns:1fr;margin-bottom:36px"><div><span class="kicker">Formation</span><h2>Une double culture, <b>chiffre et stratégie</b>.</h2></div></div>
+        <ul class="edu">
+          <li><span class="yr">2015</span><div><b>MBA</b><span>École Nationale des Ponts et Chaussées</span></div></li>
+          <li><span class="yr">2005</span><div><b>Diplôme d’expert-comptable (DPLE)</b><span>Cycle supérieur d’expertise comptable, ISCAE Casablanca</span></div></li>
+          <li><span class="yr">2001</span><div><b>DES en sciences économiques</b><span>Université Hassan II, Casablanca</span></div></li>
+          <li><span class="yr">1994</span><div><b>Licence en sciences économiques</b><span>Option économie d’entreprise</span></div></li>
+        </ul>
+        <div class="chips2" style="margin-top:28px" aria-label="Langues"><span>Arabe</span><span>Français</span><span>Anglais</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block ink" id="engagements">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Engagements</span><h2>Au cœur de <b>la profession</b> et de la cité.</h2></div>
+      </div>
+      <div class="two">
+        <ul class="roles">
+          <li><b>Ancien vice-président du Conseil national de l’Ordre des Experts-Comptables</b><span>Après avoir été trésorier de l’Ordre</span></li>
+          <li><b>Ancien vice-président général de la Fédération du Commerce et des Services</b><span>CGEM</span></li>
+          <li><b>Président du Samusocial Casablanca</b><span>Engagement associatif</span></li>
+        </ul>
+        <div>
+          <p style="color:var(--on-ink-soft);margin-bottom:18px;font-size:.92rem">Missions internationales pour l’ONUDI</p>
+          <div class="missions">
+            <div><small>2008 · Dakar</small><b>Sénégal</b><span>Diagnostic financier</span></div>
+            <div><small>2008 · Alger</small><b>Algérie</b><span>Coûts et prix de revient</span></div>
+            <div><small>2009–2010 · Brazzaville</small><b>Congo</b><span>Mise à niveau des entreprises</span></div>
+            <div><small>2016 · Libreville</small><b>Gabon</b><span>Manuel de procédures (PRMN)</span></div>
+            <div><small>2003–2009 · Paris</small><b>Dirigeants africains</b><span>Formations en finance et audit</span></div>
+            <div><small>Maroc</small><b>ISCAE · ENCG · UH1</b><span>Masters et formation continue</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="references">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker">Références de missions</span><h2>Des missions <b>à fort enjeu</b>.</h2></div>
+        <p>Pour des sociétés privées, des multinationales et des organismes publics.</p>
+      </div>
+      <div class="sectors">
+        <div class="sector"><h3>Audit &amp; commissariat aux comptes</h3><p>Depuis 1998, en directeur de mission puis associé.</p></div>
+        <div class="sector"><h3>Restructurations</h3><p>Groupe agro-alimentaire, regroupement d’activités en holding.</p></div>
+        <div class="sector"><h3>Évaluations</h3><p>Entreprises privées et patrimoine d’un organisme public.</p></div>
+        <div class="sector"><h3>Montages financiers</h3><p>Complexe touristique et résidentiel, rééchelonnement de dette d’un groupe international.</p></div>
+        <div class="sector"><h3>Audit fiscal &amp; montages</h3><p>Études juridiques et fiscales pour des sociétés de divers secteurs.</p></div>
+        <div class="sector"><h3>Organisation &amp; procédures</h3><p>Diagnostics stratégiques, manuels de procédures, bilan d’ouverture public.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block ink" id="contact">
+    <div class="wrap contact">
+      <div>
+        <span class="kicker">Contact</span>
+        <h2 style="margin-top:18px">Parlons de<b>votre projet.</b></h2>
+        <p class="sub">Un premier échange pour comprendre vos objectifs, en toute confidentialité.</p>
+      </div>
+      <div class="coords">
+        <div class="line"><small>Téléphone</small><span class="val" id="v-tel">05 22 86 17 61</span><button class="chip" type="button" id="c-tel" data-copy="v-tel">Copier</button></div>
+        <div class="line"><small>Email</small><span class="val" id="v-mail">ahmed@chahbi.com</span><button class="chip" type="button" id="c-mail" data-copy="v-mail">Copier</button></div>
+        <div class="line"><small>Adresse</small><span class="val addr">421 bd Abdelmoumen, Résidence Ryad Abdelmoumen, imm. B, 4ᵉ étage, n°16 — Casablanca</span><a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=421+boulevard+Abdelmoumen+Casablanca" target="_blank" rel="noopener">Itinéraire <span class="arrow" aria-hidden="true">↗</span></a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <span class="logo-type" style="color:var(--on-ink)">CHAHBI<small>ADVISORY</small></span>
+      <p class="tagline">Investir avec méthode. S’implanter avec confiance. Se développer durablement au Maroc.</p>
+    </div>
+    <div><h4>Expertises</h4><ul id="foot-caps" data-prefix="index.html"></ul></div>
+    <div><h4>Cabinet</h4><ul><li><a href="fondateur.html">Le fondateur</a></li><li><a href="fondateur.html#presse">Dans les médias</a></li><li><a href="index.html#investisseurs">Investisseurs</a></li><li><a href="index.html#methode">Méthode</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>05 22 86 17 61</li><li>ahmed@chahbi.com</li><li>421 bd Abdelmoumen</li><li>Casablanca, Maroc</li></ul></div>
+  </div>
+  <div class="legal"><div class="wrap"><span>© 2026 Chahbi Advisory · Depuis 2008</span><span>Les actes réservés aux professions réglementées sont confiés ou coordonnés avec les professionnels habilités.</span></div></div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var CAPS = [
+    {n:'A',id:'exp-a',t:'Conseil & stratégie d’implantation',v:'Une vision claire des enjeux, des coûts et des perspectives avant d’investir.',s:['Étude de faisabilité','Options d’implantation','Business plan & financement'],d:'Analyse réglementaire · Dossiers bancaires · Mise en relation'},
+    {n:'B',id:'exp-b',t:'Création de sociétés',v:'Une création plus simple, plus lisible, suivie jusqu’aux formalités clés.',s:['Choix de la forme juridique','Statuts & capital','RC, IF, TP, CNSS'],d:'Domiciliation · Comptes bancaires · Dossier juridique remis'},
+    {n:'C',id:'exp-c',t:'Implantation des investisseurs étrangers',v:'Un accès structuré au marché marocain pour les groupes et les non-résidents.',s:['Filiale ou succursale','Apports & opérations de change','Flux intragroupe & prix de transfert'],d:'Gouvernance · Fonction finance · Reporting maison mère'},
+    {n:'D',id:'exp-d',t:'Fiscalité & conformité',v:'Concilier conformité, maîtrise des risques et optimisation dans le respect de la loi.',s:['IS, TVA, retenues, fiscalité locale','Déclarations & calendrier fiscal','Contrôles & réclamations'],d:'Conventions internationales · Prix de transfert · Incitations à l’investissement'},
+    {n:'E',id:'exp-e',t:'Comptabilité & reporting',v:'Une organisation comptable fiable dès le démarrage.',s:['Tenue ou supervision','États de synthèse','Reporting groupe'],d:'Clôtures · Tableaux de bord · Externalisation de la fonction finance'},
+    {n:'F',id:'exp-f',t:'Gestion sociale & paie',v:'Maîtriser vos obligations envers vos salariés et les organismes sociaux.',s:['Embauche & contrats','Paie & cotisations','Déclarations sociales'],d:'Dossiers du personnel · Départs · Organisation RH'},
+    {n:'G',id:'exp-g',t:'Juridique & gouvernance',v:'Assurer la régularité du fonctionnement juridique et des décisions sociales.',s:['Assemblées & procès-verbaux','Modifications statutaires','Opérations sur le capital'],d:'Calendrier juridique · Conventions intragroupe · Délégations de pouvoirs'},
+    {n:'H',id:'exp-h',t:'Banque, financement & trésorerie',v:'Structurer vos besoins et dialoguer efficacement avec vos banques.',s:['Plans de financement','Dossiers bancaires','Prévisions de trésorerie'],d:'BFR · Créances & dettes · Financement de la croissance'},
+    {n:'I',id:'exp-i',t:'Audit & contrôle interne',v:'Sécuriser les opérations et fiabiliser l’information financière.',s:['Audit contractuel','Commissariat aux comptes','Cartographie des risques'],d:'Revue des procédures · Audit des cycles · Recommandations'},
+    {n:'J',id:'exp-j',t:'Organisation & performance',v:'Structurer l’organisation pour soutenir la croissance.',s:['Diagnostic organisationnel','Budgets & indicateurs','Rentabilité par activité'],d:'Procédures · Optimisation des coûts · Digitalisation'},
+    {n:'K',id:'exp-k',t:'Opérations stratégiques',v:'Franchir une nouvelle étape avec méthode.',s:['Évaluation d’entreprises','Acquisitions & cessions','Due diligence'],d:'Restructurations · Dossiers investisseurs · Post-acquisition'}
+  ];
+  var COMMIT = [
+    {q:'« Une vision claire des enjeux, des coûts et des obligations. »',l:['Une vision globale : juridique, fiscale, comptable, financière','Des recommandations ancrées dans la réalité opérationnelle','La maîtrise des enjeux financiers et réglementaires']},
+    {q:'« Un interlocuteur unique pour coordonner votre projet. »',l:['Une relation directe avec les dirigeants','Coordination des banques, administrations et professionnels du droit','Un suivi structuré jusqu’aux formalités clés']},
+    {q:'« Un partenaire, de la première réflexion à la croissance. »',l:['Missions récurrentes ou ponctuelles','Conformité, contrôle et pilotage','Croissance, restructuration, international']}
+  ];
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function $(id){return document.getElementById(id)}
+
+  var ml=$('mega-links'), fc=$('foot-caps'), pre=(ml&&ml.dataset.prefix)||'';
+  CAPS.forEach(function(c,i){
+    if(ml) ml.insertAdjacentHTML('beforeend','<a href="'+pre+'#'+c.id+'" data-cap="'+i+'"><span><i>'+c.n+'</i>'+esc(c.t)+'</span><span class="arrow" aria-hidden="true">→</span></a>');
+    if(fc) fc.insertAdjacentHTML('beforeend','<li><a href="'+pre+'#'+c.id+'" data-cap="'+i+'">'+esc(c.t)+'</a></li>');
+  });
+  var megaBtn=$('mega-btn'), mega=$('mega');
+  function setMega(o){mega.classList.toggle('open',o);megaBtn.setAttribute('aria-expanded',o)}
+  megaBtn.addEventListener('click',function(e){e.stopPropagation();setMega(!mega.classList.contains('open'))});
+  document.addEventListener('click',function(e){if(!mega.contains(e.target))setMega(false)});
+  var drawer=$('drawer'), burger=$('burger');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',!o);burger.setAttribute('aria-expanded',o)}
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){setMega(false);setDrawer(false)}});
+  burger.addEventListener('click',function(){setDrawer(true)});
+  $('drawer-close').addEventListener('click',function(){setDrawer(false)});
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setDrawer(false)})});
+
+  var words=document.querySelectorAll('#rot span'), wi=0;
+  if(words.length && !reduce){setInterval(function(){words[wi].classList.remove('on');wi=(wi+1)%words.length;words[wi].classList.add('on')},2600)}
+
+  var panel=$('commit-panel');
+  if(panel){
+    var tabs=[].slice.call(document.querySelectorAll('.commit [role=tab]'));
+    var showCommit=function(i){
+      tabs.forEach(function(t,j){t.setAttribute('aria-selected',i===j);t.tabIndex=i===j?0:-1});
+      panel.setAttribute('aria-labelledby','t-'+i);
+      var c=COMMIT[i];
+      panel.innerHTML='<p class="q">'+c.q+'</p><ul>'+c.l.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>';
+    };
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){showCommit(i)});
+      t.addEventListener('keydown',function(e){var k=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(k){var n=(i+k+tabs.length)%tabs.length;tabs[n].focus();showCommit(n)}});
+    });
+    showCommit(0);
+  }
+
+  var list=$('cap-list'), cp=$('cap-panel');
+  if(list){
+    CAPS.forEach(function(c,i){
+      list.insertAdjacentHTML('beforeend','<li role="presentation"><button role="tab" id="'+c.id+'" aria-selected="false" tabindex="-1"><i>'+c.n+'</i><b>'+esc(c.t)+'</b><span class="arrow" aria-hidden="true">→</span></button></li>');
+    });
+    var capBtns=[].slice.call(list.querySelectorAll('button'));
+    var showCap=function(i){
+      capBtns.forEach(function(b,j){b.setAttribute('aria-selected',i===j);b.tabIndex=i===j?0:-1});
+      cp.setAttribute('aria-labelledby',CAPS[i].id);
+      var c=CAPS[i];
+      cp.innerHTML='<div class="swap"><div class="num" aria-hidden="true">'+c.n+'</div><h3>'+esc(c.t)+'</h3><p class="v">'+esc(c.v)+'</p><div class="subs">'+c.s.map(function(x){return '<div>'+esc(x)+'</div>'}).join('')+'</div><p class="deliv"><b>Aussi</b>'+esc(c.d)+'</p></div>';
+    };
+    capBtns.forEach(function(b,i){
+      b.addEventListener('click',function(){showCap(i)});
+      b.addEventListener('mouseenter',function(){if(window.matchMedia('(hover:hover) and (min-width:981px)').matches)showCap(i)});
+      b.addEventListener('keydown',function(e){var k=(e.key==='ArrowDown'||e.key==='ArrowRight')?1:(e.key==='ArrowUp'||e.key==='ArrowLeft')?-1:0;if(k){e.preventDefault();var n=(i+k+capBtns.length)%capBtns.length;capBtns[n].focus();showCap(n)}});
+    });
+    var fromHash=function(){
+      var h=(location.hash||'').slice(1), idx=-1;
+      CAPS.forEach(function(c,i){if(c.id===h)idx=i});
+      if(idx>=0){showCap(idx);$('expertises').scrollIntoView({behavior:reduce?'auto':'smooth'})}
+      return idx;
+    };
+    if(fromHash()<0) showCap(0);
+    window.addEventListener('hashchange',fromHash);
+    document.querySelectorAll('[data-cap]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();showCap(+a.dataset.cap);setMega(false);$('expertises').scrollIntoView({behavior:reduce?'auto':'smooth'})})});
+  }
+
+  var m=$('method');
+  if(m && 'IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){m.style.setProperty('--p',0);requestAnimationFrame(function(){requestAnimationFrame(function(){m.style.setProperty('--p',1)})});io.disconnect()}
+    })},{threshold:.4});
+    io.observe(m);
+  }
+
+  document.querySelectorAll('button[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var el=$(b.dataset.copy), t=el.textContent.trim();
+      var ok=function(){b.textContent='Copié ✓';setTimeout(function(){b.textContent='Copier'},1600)};
+      var fb=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Sélectionné'};
+      try{navigator.clipboard.writeText(t).then(ok,fb)}catch(e){fb()}
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
