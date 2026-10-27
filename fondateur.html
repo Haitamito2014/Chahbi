@@ -379,13 +379,19 @@ footer{background:#070f1f;color:var(--on-ink-soft);font-size:.86rem}
 a.mail{text-decoration:none;color:inherit}
 a.mail:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
 
+
+.util .wrap > span:first-child{display:flex;align-items:center;gap:18px}
+.lang{display:inline-flex;border:1px solid rgba(255,255,255,.22)}
+.lang a{padding:3px 9px;text-decoration:none;color:var(--on-ink-soft);font-weight:600;font-size:.72rem;letter-spacing:.1em}
+.lang a:hover{color:var(--on-ink)}
+.lang a.on{background:var(--on-ink);color:var(--ink)}
 </style>
 </head>
 <body>
 
 <div class="util">
   <div class="wrap">
-    <span>Bd Abdelmoumen · Casablanca</span>
+    <span><span class="lang" aria-label="Langue / Language"><a href="fondateur.html" hreflang="fr" lang="fr" class="on" aria-current="true">FR</a><a href="founder.html" hreflang="en" lang="en">EN</a></span><span>Bd Abdelmoumen · Casablanca</span></span>
     <span><a class="hide-sm mail" href="mailto:ahmed@chahbi.com">ahmed@chahbi.com</a><span class="hide-sm"> · </span><b>05 22 86 17 61</b></span>
   </div>
 </div>
@@ -427,6 +433,7 @@ a.mail:hover{text-decoration:underline;text-decoration-color:var(--gold);text-un
     <a href="index.html#methode">Méthode</a>
     <a href="fondateur.html">Le fondateur</a>
     <a href="index.html#contact">Contact</a>
+    <a href="founder.html" lang="en">English version</a>
   </nav>
 </div>
 
